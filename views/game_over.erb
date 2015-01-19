@@ -1,6 +1,27 @@
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script language="javascript">
+
+    $(function() {
+        var len_fit = 20; // Assuming approx 20 characters can fit
+        var un = $('#thanks');
+
+        // Get the length of the h3 message including name.
+        var len_thanks = un.html().length;
+        if(len_fit < len_thanks ){
+
+            // Calculate the new font size.
+            var size_now = parseInt(un.css("font-size"));
+            var size_new = size_now * len_fit/len_thanks;
+
+            // Set the new font size according to the length of the message.
+            un.css("font-size",size_new); 
+        }
+    });
+</script>
+
 <div class="text-center image-wrapper">
   <img src="/images/blank-vegas.png" />
-  <h3>Thanks for playing, <%= session[:player_name] %>!</h3>
+  <h3 id="thanks">Thanks for playing, <%= session[:player_name] %>!</h3>
   <p> Maybe it's time to hit up Vegas? </p>
   <br />
   <a href='/new_player' class="btn btn-link btn-large"><i class="icon-refresh"></i> Start Over</a>
