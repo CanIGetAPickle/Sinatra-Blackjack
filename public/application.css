@@ -1,0 +1,46 @@
+form#hit_form {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+form#stay_form {
+  display: inline-block;
+}
+
+img.card_image {
+  margin: 0px 5px 5px 0px;
+}
+
+.image-wrapper {
+  position: relative;
+}
+
+.image-wrapper h3 {
+  position: absolute;
+  top: 200px;
+  left: 320px;
+  width: 100%;
+  margin: 0 auto;
+  width: 300px;
+  height: 50px;
+}
+
+.image-wrapper p {
+  position: absolute;
+  top: 240px;
+  left: 320px;
+  width: 100%;
+  margin: 0 auto;
+  width: 300px;
+  height: 50px;
+}
+
+.image-wrapper a {
+  position: absolute;
+  top: 270px;
+  left: 300px;
+  width: 100%;
+  margin: 0 auto;
+  width: 300px;
+  height: 50px;
+}
