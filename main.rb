@@ -7,7 +7,7 @@ configure :development do
   set :port, 4000 # Not necessary, but works with Preview menu
 end
 
-set :sessions, true
+#set :sessions, true
 
 use Rack::Session::Cookie, :key => 'rack.session',
                            :path => '/',

@@ -22,7 +22,7 @@
     <h4>Dealer's cards:</h4>
       <% session[:dealer_cards].each_with_index do |card, index| %>
         <% if session[:turn] != "dealer" && index == 0 %>
-          <img src="/images/cards/cover.jpg">
+          <img src="/images/cards/cover.jpg" />
         <% else %>
         <%= card_image(card) %>
         <% end %>
@@ -32,7 +32,7 @@
         <p>
           <h5> Dealer has <%= calculate_total(session[:dealer_cards]) %> and will hit.</h5> 
           <form id="dealer_hit" action='/game/dealer/hit' method='post'> 
-            <input type='submit' class='btn btn-primary' value="Click to see dealer's card">
+            <input type='submit' class='btn btn-primary' value="Click to see dealer's card" />
           </form>
         </p>
       <% end %>
@@ -47,7 +47,7 @@
       <% end %>
 
     <h4>
-      <%= session[:player_name] %> has <%= session [:player_pot] %> and bet $<%= session[:player_bet] %> this round.]
+      <%= session[:player_name] %> has <%= session [:player_pot] %> and bet $<%= session[:player_bet] %> this round.
     </h4>
   </div>
 
@@ -58,7 +58,7 @@
       What would you like to do?
 
       <% if @show_hit_or_stay_buttons %>
-        <form id="hit_form" action="/game/player/hit" method="post"> <%# action is the page to which you want to submit; method, by default, is get unless post is specified %>
+        <form id="hit_form" action="/game/player/hit" method="post">  <!-- action is the page to which you want to submit; method, by default, is get unless post is specified -->
           <input type="submit" class="btn btn-success" value="Hit" />
         </form>
 
