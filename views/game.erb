@@ -38,6 +38,10 @@
     <% session[:player_cards].each do |card| %>
     <%= card_image(card) %>
     <% end %>
+  
+  <h4>
+    <%= session[:player_name] %> has <%= session [:player_pot] %> and bet $<%= session[:player_bet] %> this round.]
+  </h4>
 </div>
 
 <div class="text-center">
