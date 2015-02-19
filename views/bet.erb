@@ -2,8 +2,9 @@
   <h3>Make a bet for this round.</h3>
   <p><%= session[:player_name] %> has $<%= session[:player_pot].to_i %></p>
   <form action='/bet' method='post'>
-    <input type='text' name='bet_amount' />
-    <br/>
-    <input type="submit" value="Place Bet" class="btn" />
+    <div class="input-append">
+      <input type='text' name='bet_amount' />
+      <input type="submit" value="Place Bet" class="btn" id="appendedInputButton" />
+    </div>
   </form>
 </div>

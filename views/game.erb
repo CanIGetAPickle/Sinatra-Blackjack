@@ -1,10 +1,10 @@
 <div id="game">
   <%if @loser %>
-  <div class="alert alert-error text-center" style="font-size:24px"><%=@loser%></div>
-    <% end %>
+    <div class="alert alert-error text-center" style="font-size:24px"><%= @loser %></div>
+  <% end %>
   <%if @winner %>
-  <div class="alert alert-success text-center" style="font-size:24px"><%=@winner%></div>
-    <% end %> 
+    <div class="alert alert-success text-center" style="font-size:24px"><%= @winner %></div>
+  <% end %> 
   <h1 class="text-center">Blackjack!</h1>
 
   <p class="text-center">Welcome, <%= session[:player_name] %>.</p>
